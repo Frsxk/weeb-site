@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Rethink+Sans&family=Silkscreen&display=swap');
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #BCF8EC;
+    padding: 15px;
+    float: left;
+    cursor: pointer;
+}
+
+a:hover {
+    background-color: darkcyan;
+}
+
+body {
+    margin-top: 5%;
+    background-image: url(assets/line.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-header {
+    background-color: #564D65;
+    padding-left: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    z-index: 10;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-header {
+    text-align: left;
+    color: #BCF8EC;
+    padding: 0px;
+    margin: 14px;
+    position: absolute;
+    left: 65px;
+}
+
+.icon-header {
+    width: 40px;
+    margin: 8px 15px;
+    margin-top: 5px;
+    position: absolute;
+    transform: scaleX(-1);
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.drpdwn {
+    width: 70px;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: #564D65;
+}
+
+.nothing {
+    margin: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    padding: 0;
+    float: none;
+}
+.nothing:hover {
+    background-color: transparent;
+}
+
+main {
+    margin-top: 60px;
+}
+
+.footer {
+    background-color: #564D65;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    color: #BCF8EC;
+    font-family: 'Silkscreen', sans-serif;
+}
+
+.info-center {
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid #BCF8EC;
+    color: #BCF8EC;
+    font-family: 'Manrope', sans-serif;
+}
+
+.info-more {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-twitter, .fa-envelope, .fa-discord {
+    padding: 2px;
+    font-size: 23px;
+    color: #f0ece5;   
+}
+
+#jumbotron {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.jumbotron {
+    padding: 20px;
+    text-align: center;
+    background-color: #31304d;
+    height: 620px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.jumbo-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.jumbotron-title {
+    padding-top: 65px;
+    color: #BCF8EC;
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.jumbotron-text {
+    color: #BCF8EC;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 8px solid #BED754;
+    font-family: 'Manrope', sans-serif;
+}
+
+.mini-text-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.mini-text {
+    color: #b6bbc4;
+    text-align: left;
+    margin-right: 5px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.fa-hand-point-down {
+    margin-top: 18px;
+    margin-left: 15px;
+    font-size: 20px;
+    color: #b6bbc4;
+}
+
+.wave {
+    position: absolute;
+    top: 550px;
+    right: 0;
+    z-index: 2;
+}
+
+.main-content {
+    padding-top: 650px;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* margin-top: 30px; */
+}
+
+.image-slider {
+    position: relative;
+    width: 640px;
+    height: 420px;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    clip-path: circle(0% at 0 50%);
+}
+
+.slide.active {
+    clip-path: circle(150% at 0 50%);
+    transition: 2s;
+    transition-property: clip-path;
+}
+
+.slider-btn.active {
+    background-color: #b6bbc4;
+}
+
+.slide img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.slide-text {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    background-color: #31304d;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+.slide-text h2 {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Rethink Sans', sans-serif;
+    color: #BCF8EC;
+}
+
+.navigation {
+    position: absolute;
+    display: flex;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider-btn {
+    background-color: #b6bbc4;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+
+article {
+    max-width: 100%;
+}
+
+.article-title {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px 0 30px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.article-desc {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.blog {
+    margin: 10px 30px;
+    border-bottom: 10px solid #31304d;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px gainsboro;
+}
+
+.blog-title {
+    color: #101019;
+    font-weight: bold;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.blog-description {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* .blog img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+} */
+
+.logo {
+    width: 125px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cat-img {
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.play {
+    background-color: #564D65;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+}
+
+.center {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    text-align: center;
+    font-family: 'Manrope', sans-serif;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 1px solid black;
+    background-color: #161a30;
+    margin: 20px 0;
+}
