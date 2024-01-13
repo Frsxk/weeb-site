@@ -236,8 +236,18 @@ main {
     transition-property: clip-path;
 }
 
-.slider-btn.active {
+.slider-btn {
     background-color: #b6bbc4;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+    margin-bottom: 10px;
+}
+
+.slider-btn.active {
+    background-color: #564d65;
 }
 
 .slide img {
@@ -269,16 +279,6 @@ main {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-.slider-btn {
-    background-color: #b6bbc4;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    cursor: pointer;
-    margin: 0 5px;
-    margin-bottom: 10px;
 }
 
 article {
@@ -363,4 +363,128 @@ article {
     border: 1px solid black;
     background-color: #161a30;
     margin: 20px 0;
+}
+
+.about {
+    background-color: #31304d;
+}
+
+.category-container {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.category {
+    margin: 50px 30px 100px;
+    border-bottom: 10px solid #31304d;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px gainsboro;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.category-title {
+    font-weight: bold;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.category-desc {
+    margin: 5px;
+}
+
+.category-desc h3 {
+    margin: 0 5px 5px;
+    padding: 0;
+    font-size: 24px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.category-desc p {
+    margin: 20px 5px;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.category-img {
+    margin: 5px;
+}
+
+.category-img img {
+    width: 380px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.about-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.about-title {
+    font-size: 40px;
+    margin: 50px 0 0;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.about-subtitle {
+    font-size: 17px;
+    color: #564d65;
+    margin: 10px 0 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about-image {
+    margin: 0;
+}
+
+.blob {
+    width: 500px;
+    height: auto;
+    transform: rotate(-90deg);
+}
+
+.about-img {
+    position: absolute;
+    width: 280px;
+    height: auto;
+    left: 600px;
+    top: 320px;
+    border-radius: 40%;
+}
+
+.about-description p {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 2px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.about-description h4 {
+    color: #564D65;
+    letter-spacing: 1px;
+    font-family: 'Rethink Sans', sans-serif;
+}
+
+.asset-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.asset-item {
+    box-shadow: 0 0 5px gainsboro;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: white;
+}
+
+.asset-item img {
+    width: 200px;
+    height: auto;
 }
