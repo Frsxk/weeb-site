@@ -43,3 +43,36 @@ var repeat = function(activeClass) {
     repeater();
 }
 repeat();
+
+var blogs = document.querySelectorAll(`.blog`);
+blogs.forEach( (p, i) => {
+    p.dataset.aos = `fade-down`;
+    p.dataset.aosDuration = 1300;
+    // p.dataset.aosDelay = i * 200;
+});
+
+var video = document.querySelectorAll(`.video-content`);
+video.forEach(p => {
+    p.dataset.aos = `fade-up`;
+    p.dataset.aosDuration = 1200;
+});
+
+var form = document.querySelectorAll(`.form-container`);
+form.forEach(p => {
+    p.dataset.aos = `flip-up`;
+    p.dataset.aosDuration = 500;
+})
+
+var about = document.querySelectorAll(`.about-description`);
+about.forEach(p => {
+    p.dataset.aos = `fade-up`;
+    p.dataset.aosDuration = 1000;
+})
+
+var about = document.querySelectorAll(`.asset-item`);
+about.forEach(p => {
+    p.dataset.aos = `fade-up-left`;
+    p.dataset.aosDuration = 1000;
+})
+
+AOS.init();
