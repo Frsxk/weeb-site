@@ -51,6 +51,13 @@ blogs.forEach( (p, i) => {
     // p.dataset.aosDelay = i * 200;
 });
 
+var category = document.querySelectorAll(`.category`);
+category.forEach( (p, i) => {
+    p.dataset.aos = `fade-up`;
+    p.dataset.aosDuration = 1300;
+    p.dataset.aosDelay = i * 300;
+});
+
 var video = document.querySelectorAll(`.video-content`);
 video.forEach(p => {
     p.dataset.aos = `fade-up`;
